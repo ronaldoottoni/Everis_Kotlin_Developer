@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ronaldo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-02-23 09:54:02 "/>
+        <attribute name="created" value="cm9uYWxkbztST05BTERPLVBDOzIwMjEtMDItMjM7IjA5OjI0OjQwICI7MjY1Ng=="/>
+        <attribute name="edited" value="cm9uYWxkbztST05BTERPLVBDOzIwMjEtMDItMjM7IjA5OjU0OjAyICI7MjsyNzY2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nome" type="String" array="False" size=""/>
+            <declare name="jan, fev, mar, abr, media" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o nome do vendedor: &quot;" newline="True"/>
+            <input variable="nome"/>
+            <output expression="&quot;Insira o total de vendas de Janeiro: &quot;" newline="True"/>
+            <input variable="jan"/>
+            <output expression="&quot;Insira o total de vendas de Fevereiro: &quot;" newline="True"/>
+            <input variable="fev"/>
+            <output expression="&quot;Insira o total de vendas de Mar&#231;o: &quot;" newline="True"/>
+            <input variable="mar"/>
+            <output expression="&quot;Insira o total de vendas de Abril: &quot;" newline="True"/>
+            <input variable="abr"/>
+            <assign variable="media" expression="(jan+fev+mar+abr)/4"/>
+            <output expression="&quot;Ol&#225; &quot;&amp; nome &amp; &quot;, nos primeiros 4 meses voc&#234; vendeu uma m&#233;dia de: R$&quot; &amp; media" newline="True"/>
+            <if expression="media&gt;5000">
+                <then>
+                    <output expression="&quot;Parab&#233;ns! Voc&#234; receber&#225; um abono de 10%&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Vendeu pouco, vai receber abono de apenas 3%&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
