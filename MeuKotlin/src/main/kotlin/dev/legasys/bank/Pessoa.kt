@@ -11,8 +11,6 @@ class Pessoa {
 fun main(){
     val ronaldo = Pessoa()
 
-    ronaldo.cpf = "159.157.154-35"
-
     println(ronaldo.nome)
     println(ronaldo.cpf)
 
