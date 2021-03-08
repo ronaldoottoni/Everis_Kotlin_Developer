@@ -1,6 +1,7 @@
 package com.legasys.collection
 
 fun main() {
+    //IntArray fornece um array de inteiros com um tamanho pre-definido para o array, trabalha de forma engessada
     val values = IntArray(5)
 
     values[0] = 1
