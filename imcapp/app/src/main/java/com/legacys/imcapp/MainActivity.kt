@@ -10,6 +10,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         Log.w("lifecycle", "entrei no onCreate")
         //finish()
+
     }
 
     override fun onStart() {
